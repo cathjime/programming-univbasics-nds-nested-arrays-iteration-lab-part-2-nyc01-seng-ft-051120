@@ -24,7 +24,7 @@ def find_min_in_nested_arrays(array_of_daily_temperatures)
       end 
       element_index += 1 
     end 
-    smallest_nums += smallest_element
+    smallest_nums << smallest_element
     row_index += 1 
   end 
   smallest_nums
