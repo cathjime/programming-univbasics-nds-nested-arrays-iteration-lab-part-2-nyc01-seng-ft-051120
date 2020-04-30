@@ -17,7 +17,7 @@ def find_min_in_nested_arrays(array_of_daily_temperatures)
   row_index = 0   # array[index] = inner arr 
   while row_index < array_of_daily_temperatures.count do  #while i < array.length
     element_index = 0 
-    smallest_element = 0 
+    smallest_element = 1000 
     while element_index < array_of_daily_temperatures[row_index].count do
       if array_of_daily_temperatures[row_index][element_index] < smallest_element
         smallest_element = array_of_daily_temperatures[row_index][element_index]
