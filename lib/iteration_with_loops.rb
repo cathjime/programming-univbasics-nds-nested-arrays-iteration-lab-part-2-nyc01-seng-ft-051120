@@ -10,7 +10,7 @@ array_of_daily_temperatures = [
 
 #assuming array = [[1, 2], [3, 4]]
 #array[0] = [1, 2]
-#array[1] = [3, 4] - row index = array[index] = inner arr 
+#array[1] = [3, 4] -> row index = array[index] = inner arr 
 
 def find_min_in_nested_arrays(array_of_daily_temperatures)
   smallest_nums = [ ]
@@ -24,7 +24,7 @@ def find_min_in_nested_arrays(array_of_daily_temperatures)
       end 
       element_index += 1 
     end 
-    smallest_nums << smallest_element
+    smallest_nums += smallest_element
     row_index += 1 
   end 
   smallest_nums
